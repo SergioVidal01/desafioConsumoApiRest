@@ -128,8 +128,8 @@ export default {
 }
 
 .chat-box {
-  width: 60%; /* Ancho más grande para el chat */
-  height: 400px; /* Aumento la altura del chat */
+  width: 900px; /* Ancho más grande para el chat */
+  height: 300px; /* Aumento la altura del chat */
   overflow-y: scroll;
   border: 1px solid #ccc;
   padding: 10px;
@@ -146,6 +146,14 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+.user-container-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .user-image {
@@ -157,12 +165,12 @@ export default {
 
 .user-container-left .user-image {
   position: relative;
-  left: 0px; /* Imagen de usuario 1 pegada al lado izquierdo */
+  left: -50px; /* Imagen de usuario 1 pegada al lado izquierdo */
 }
 
 .user-container-right .user-image {
   position: relative;
-  right: 0px; /* Imagen de usuario 2 pegada al lado derecho */
+  right: 10px; /* Imagen de usuario 2 pegada al lado derecho */
 }
 
 .user-name {
@@ -173,8 +181,8 @@ export default {
 }
 
 .user-input {
-  width: 80%;
-  padding: 5px;
+  width: 20px;
+  padding: 20px;
   margin-bottom: 10px;
 }
 
