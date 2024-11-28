@@ -6,6 +6,10 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production'
+  ? '/desafioConsumoApiRest/' // Reemplaza con el nombre de tu repositorio
+  : '/',
+
   plugins: [
     vue(),
     vueDevTools(),
